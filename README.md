@@ -1,5 +1,7 @@
 # INF553-Projet
 
+## TODO: add repo explanation (Zhengqing)
+
 ## Quick Start
 1. `git clone https://github.com/Scofield626/INF553-projet`
 2. Database configuration
