@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Query result</title>
+  </head>
+  <body>
+  	<h1>The query results of the current table are: </h1>
+    <h2>Query_4</h2>
+    <font size = "+1.5">For each user table, or index over a user table, return: its internal identifier, its name, and the name of the access method it supports.</font>
+    <ul>
+    <font size = "+1">
+    {% for result in results_4 %}
+        <li>{{ result }}</li>
+    {% endfor %}
+    </font>
+    </ul>
+    <h2>Query_5</h2>
+    <font size = "+1.5">For each table in the current database, not automatically created by Postgres, and each attribute of the table that is of type varchar, return the name of the table, the name of the attribute, and the name of the attribute type.</font>
+    <ul>
+    <font size = "+1">
+    {% for result in results_5 %}
+        <li>{{ result }}</li>
+    {% endfor %}
+    </font>
+    </ul>
+    <h2>Query_7</h2>
+    <font size = "+1.5">Call myattr the table obtained by adding LIMIT 5 to the query from point 5. For every attribute listed in myattr, use pg stats to return: tablename, attname, distval, min and max</font>
+    <ul>
+    <font size = "+1">
+    {% for result in results_7 %}
+        <li>{{ result }}</li>
+    {% endfor %}
+    </font>
+    </ul>
+  </body>
+</html>

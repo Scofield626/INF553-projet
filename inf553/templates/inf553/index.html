@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>INF553 Projet</title>
+    <style>
+      .demo{
+        width:700px;
+        
+        background-image: url(" https://www.usinenouvelle.com/mediatheque/0/4/8/000736840_896x598_c.jpg") ;
+      } 
+      .demo1{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+      
+    </style>
+                              
+  </head>
+
+  <body >
+    <div align = "center">
+      
+      <div>
+        <h1>INF553 DBMS Project</h1>
+
+        <font size = "+2" ><em>Zhengqing Liu</em></font> <br><br>
+        <font size = "+1.5" >December 2021</font> <br><br> <br><br>
+        <font size = "+1.5">This project is aimed to build a web application to return some results of queries. It is mainly developed by Django and Postgresql.</font> <br><br><br><br>
+        <img src = "https://www.usinenouvelle.com/mediatheque/0/4/8/000736840_896x598_c.jpg">
+        <h2>The tables of the current database are: </h2>
+        <font size = "+1.5">click below to see the query results</font><br>
+        <font size = "+1">
+        <ul>
+        {% for table in tables %}
+            <a href = "{% url 'inf553:detail' table.0 %}">{{ table.0 }}</a><br>
+        {% endfor %}
+        </ul>
+        <ul>
+        </font>
+      </div>
+      <img src = "https://programmes.polytechnique.edu/themes/custom/x_theme_bulma/images/polytechnique.jpg"  width = '400'>
+    </div>
+  </body>
+</html>
