@@ -1,6 +1,13 @@
 # INF553-Projet
 
-## TODO: add repo explanation (Zhengqing)
+Course: INF553 Database Management System (École Polytechnique)
+
+Requirements: Build a Web app which, given a database name,
+       
+    (a) shows to users the result of one of the queries in Question 3
+    (b) users should be able to click on any table names, and this should lead to a page showing the results of the queries in points 4, 5, and 7 above, restricted to that table.
+
+
 
 ## Quick Start
 1. `git clone https://github.com/Scofield626/INF553-projet`
